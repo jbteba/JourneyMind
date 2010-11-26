@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="6b019204-e747-4717-b319-e6918a5e4ce5" name="Javi@JAVI-PC 2010-11-20 18:06:40" runUser="Javi-PC\Javi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="eceb927b-8f08-4103-a3ee-df2a0308df84">
+    <Deployment runDeploymentRoot="Javi_JAVI-PC 2010-11-20 18_06_40">
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\bin\Debug\TravellerMind.Domain.dll" />
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Infrastructure.dll" />
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\bin\TravellerMind.Web.dll" />
+      <DeploymentItem filename="C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\libraries\RhinoMocks\Rhino.Mocks.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-11-20T18:06:40.9435012+01:00" queuing="2010-11-20T18:06:41.0265060+01:00" start="2010-11-20T18:06:41.0345064+01:00" finish="2010-11-20T18:06:41.4625309+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="1" executed="1" error="0" failed="1" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Index_ReturnsASearch" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="2443436c-68c0-4e7c-3f73-0875960025d7">
+      <Execution id="5f408e38-09f6-46ae-8705-2f5c0860b6d0" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.SearcherControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index_ReturnsASearch" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="2443436c-68c0-4e7c-3f73-0875960025d7" executionId="5f408e38-09f6-46ae-8705-2f5c0860b6d0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="5f408e38-09f6-46ae-8705-2f5c0860b6d0" testId="2443436c-68c0-4e7c-3f73-0875960025d7" testName="Index_ReturnsASearch" computerName="JAVI-PC" duration="00:00:00.1177503" startTime="2010-11-20T18:06:41.0375066+01:00" endTime="2010-11-20T18:06:41.3275232+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f408e38-09f6-46ae-8705-2f5c0860b6d0">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;SearchProxy07ebd737b658453592facbae8b6dc448&gt;. Actual:&lt;(null)&gt;. </Message>
+          <StackTrace>   at TravellerMind.Tests.Controllers.SearcherControllerTest.Index_ReturnsASearch() in C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\Controllers\SearcherControllerTest.cs:line 34
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

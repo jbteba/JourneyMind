@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="ad6cb5e1-44a8-4bd2-a26a-c395ffc962de" name="Javi@JAVI-PC 2010-11-20 18:40:03" runUser="Javi-PC\Javi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Local" id="46797288-f956-462d-9a45-2c13fca839e0">
+    <Description>These are default test settings for a local test run.</Description>
+    <Deployment enabled="false" runDeploymentRoot="Javi_JAVI-PC 2010-11-20 18_40_03">
+      <DeploymentItem filename="C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Infrastructure.dll" />
+      <DeploymentItem filename="C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\bin\Debug\TravellerMind.Domain.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-11-20T18:40:03.6542826+01:00" queuing="2010-11-20T18:40:03.7166827+01:00" start="2010-11-20T18:40:03.7166827+01:00" finish="2010-11-20T18:40:04.2938837+01:00" />
+  <ResultSummary outcome="Completed">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="GetTravels_ReturnsANotNullList" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.infrastructure.tests\bin\debug\travellermind.infrastructure.tests.dll" id="68c5128b-f22d-b7a1-41b9-b9ff5de8b9e5">
+      <Execution id="556d2078-0d42-4ead-bc01-0287806fc455" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Infrastructure.Tests/bin/Debug/TravellerMind.Infrastructure.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Infrastructure.Tests.Repositories.TravelsRepositoryTest, TravellerMind.Infrastructure.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="GetTravels_ReturnsANotNullList" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="68c5128b-f22d-b7a1-41b9-b9ff5de8b9e5" executionId="556d2078-0d42-4ead-bc01-0287806fc455" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="556d2078-0d42-4ead-bc01-0287806fc455" testId="68c5128b-f22d-b7a1-41b9-b9ff5de8b9e5" testName="GetTravels_ReturnsANotNullList" computerName="JAVI-PC" duration="00:00:00.0121282" startTime="2010-11-20T18:40:03.7166827+01:00" endTime="2010-11-20T18:40:03.8882830+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="556d2078-0d42-4ead-bc01-0287806fc455">
+    </UnitTestResult>
+  </Results>
+</TestRun>

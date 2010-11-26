@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="50093639-1ae5-40fa-ae9c-7cac2ab6d029" name="Javi@JAVI-PC 2010-11-20 18:06:09" runUser="Javi-PC\Javi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="609b7ab7-81b9-4cb6-971c-7f8de071f95e">
+    <Deployment runDeploymentRoot="Javi_JAVI-PC 2010-11-20 18_06_09">
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\bin\Debug\TravellerMind.Domain.dll" />
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Infrastructure.dll" />
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\bin\TravellerMind.Web.dll" />
+      <DeploymentItem filename="C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\libraries\RhinoMocks\Rhino.Mocks.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-11-20T18:06:09.8851400+01:00" queuing="2010-11-20T18:06:09.9791454+01:00" start="2010-11-20T18:06:09.9901460+01:00" finish="2010-11-20T18:06:10.9462007+01:00" />
+  <ResultSummary outcome="Inconclusive">
+    <Counters total="21" executed="21" passed="19" error="0" failed="0" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="ef1be392-533f-3115-3caa-2a6579c66d5e">
+      <Execution id="4c0d64d0-e7ad-405b-8e69-74e5bae2bde3" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="ac8402e8-6d2b-23b8-3ae7-c25a311e0818">
+      <Execution id="93c639be-a675-4cff-a770-46117d48ba10" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="Index" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="fd83e181-c551-a3c6-5eb3-b91cef938b9c">
+      <Execution id="c91ec364-3373-46e4-bdaf-65ba7c1c4352" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.HomeControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+    <UnitTest name="Searcher_SearchIsNotNull" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="6ed7e016-2c48-b485-af35-b622d8f5528b">
+      <Execution id="0364b58b-7e6c-4eee-878e-03a7c53afa0c" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.SearcherControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Searcher_SearchIsNotNull" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsViewIfModelStateIsInvalid" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="e2af2074-6186-43a3-7741-2b57f15a109a">
+      <Execution id="a53ba8c3-3f25-4d31-9df2-36ea359c87d9" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="LogOff_LogsOutAndRedirects" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="ebc23c69-09fa-ba61-597a-bd979a25ade3">
+      <Execution id="2c9381ed-6b45-4981-8521-18c3e17e0e1d" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOff_LogsOutAndRedirects" />
+    </UnitTest>
+    <UnitTest name="Register_Get_ReturnsView" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="ce3260ff-12ca-214f-e193-dc6a56d826aa">
+      <Execution id="33b7e1bf-dead-4f66-9cc3-f1a7cbe4096d" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsViewIfValidateUserFails" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="e2008a8f-0cdc-8108-03b0-612fd62516f7">
+      <Execution id="80959634-5dca-4c60-a34b-096c6946d470" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsViewIfValidateUserFails" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsViewIfRegistrationFails" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="e8c8b2b5-2007-e855-03da-6d2032ef5a80">
+      <Execution id="ee6961b9-7a81-486f-b437-45c3fa60b68f" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsViewIfRegistrationFails" />
+    </UnitTest>
+    <UnitTest name="ProfilesController_ProfilesRepositoryIsNotNull" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="61f28dd2-e2cf-aed1-7fb7-f16f602b39f8">
+      <Execution id="f83c8c9a-44dc-426a-9726-aee65216a586" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.ProfileControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProfilesController_ProfilesRepositoryIsNotNull" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Get_ReturnsView" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="81873771-9fe3-0f87-7c01-aaa59f1bc07f">
+      <Execution id="7f1a0d4a-478b-4a52-a182-81976873352c" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="Index_CallsToGetAllMethod" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="85a1a4fe-1e62-016e-1bb6-5ccfab3a01e6">
+      <Execution id="302888c2-aa7c-4e19-9eed-2a2fbbc1c7a9" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.ProfileControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index_CallsToGetAllMethod" />
+    </UnitTest>
+    <UnitTest name="Register_Post_ReturnsRedirectOnSuccess" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="d3581637-0c3d-f8cb-e456-d23f5bc1619c">
+      <Execution id="4e62d3f8-5c0e-408e-a12b-6ce9638ff7c4" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Register_Post_ReturnsRedirectOnSuccess" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsViewIfModelStateIsInvalid" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="881b000d-b279-580f-6b1e-6829a9e8c2ed">
+      <Execution id="ce99e67b-9385-4471-82ea-0ee365a8f141" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsViewIfModelStateIsInvalid" />
+    </UnitTest>
+    <UnitTest name="LogOn_Get_ReturnsView" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="0b91ed8f-758e-ce8f-a5a0-42fcdba43eec">
+      <Execution id="4e95e43e-1e34-42cb-9759-abe195fd1689" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Get_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="Index_ReturnsTheProfilesList" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="ff01fa7f-3c72-140a-322a-c5220f494319">
+      <Execution id="7f46c4dc-58ea-4980-8265-299d7811e785" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.ProfileControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index_ReturnsTheProfilesList" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsRedirectOnSuccess" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="a828b198-62e4-69e2-0e7c-6af99e23db17">
+      <Execution id="f106f6e7-b320-42e4-b312-36d5793d38b1" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsRedirectOnSuccess" />
+    </UnitTest>
+    <UnitTest name="ChangePasswordSuccess_ReturnsView" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="a9a45bf3-ddbf-0c3e-39f9-41a5747c220b">
+      <Execution id="6cddc3c5-2f01-4bb6-a878-f0fe30dbec06" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePasswordSuccess_ReturnsView" />
+    </UnitTest>
+    <UnitTest name="ChangePassword_Post_ReturnsViewIfChangePasswordFails" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="623facad-a7bf-788d-4a37-7412b352bd5e">
+      <Execution id="642ebe64-4e49-4872-ba32-b46536e881a6" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ChangePassword_Post_ReturnsViewIfChangePasswordFails" />
+    </UnitTest>
+    <UnitTest name="About" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="ab41cad7-0569-024e-6bf1-9f3534215206">
+      <Execution id="0e719d92-e3f6-43a9-9288-bbd757800483" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.HomeControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="About" />
+    </UnitTest>
+    <UnitTest name="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="7e641361-7495-7971-eee7-7c2d78e0205d">
+      <Execution id="0ed973ef-7b88-42aa-acc4-1101c66d6a81" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.AccountControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="fd83e181-c551-a3c6-5eb3-b91cef938b9c" executionId="c91ec364-3373-46e4-bdaf-65ba7c1c4352" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ff01fa7f-3c72-140a-322a-c5220f494319" executionId="7f46c4dc-58ea-4980-8265-299d7811e785" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2008a8f-0cdc-8108-03b0-612fd62516f7" executionId="80959634-5dca-4c60-a34b-096c6946d470" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6ed7e016-2c48-b485-af35-b622d8f5528b" executionId="0364b58b-7e6c-4eee-878e-03a7c53afa0c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ce3260ff-12ca-214f-e193-dc6a56d826aa" executionId="33b7e1bf-dead-4f66-9cc3-f1a7cbe4096d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="881b000d-b279-580f-6b1e-6829a9e8c2ed" executionId="ce99e67b-9385-4471-82ea-0ee365a8f141" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0b91ed8f-758e-ce8f-a5a0-42fcdba43eec" executionId="4e95e43e-1e34-42cb-9759-abe195fd1689" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ac8402e8-6d2b-23b8-3ae7-c25a311e0818" executionId="93c639be-a675-4cff-a770-46117d48ba10" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e8c8b2b5-2007-e855-03da-6d2032ef5a80" executionId="ee6961b9-7a81-486f-b437-45c3fa60b68f" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7e641361-7495-7971-eee7-7c2d78e0205d" executionId="0ed973ef-7b88-42aa-acc4-1101c66d6a81" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ebc23c69-09fa-ba61-597a-bd979a25ade3" executionId="2c9381ed-6b45-4981-8521-18c3e17e0e1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="81873771-9fe3-0f87-7c01-aaa59f1bc07f" executionId="7f1a0d4a-478b-4a52-a182-81976873352c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab41cad7-0569-024e-6bf1-9f3534215206" executionId="0e719d92-e3f6-43a9-9288-bbd757800483" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61f28dd2-e2cf-aed1-7fb7-f16f602b39f8" executionId="f83c8c9a-44dc-426a-9726-aee65216a586" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ef1be392-533f-3115-3caa-2a6579c66d5e" executionId="4c0d64d0-e7ad-405b-8e69-74e5bae2bde3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a828b198-62e4-69e2-0e7c-6af99e23db17" executionId="f106f6e7-b320-42e4-b312-36d5793d38b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9a45bf3-ddbf-0c3e-39f9-41a5747c220b" executionId="6cddc3c5-2f01-4bb6-a878-f0fe30dbec06" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2af2074-6186-43a3-7741-2b57f15a109a" executionId="a53ba8c3-3f25-4d31-9df2-36ea359c87d9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="623facad-a7bf-788d-4a37-7412b352bd5e" executionId="642ebe64-4e49-4872-ba32-b46536e881a6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d3581637-0c3d-f8cb-e456-d23f5bc1619c" executionId="4e62d3f8-5c0e-408e-a12b-6ce9638ff7c4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="85a1a4fe-1e62-016e-1bb6-5ccfab3a01e6" executionId="302888c2-aa7c-4e19-9eed-2a2fbbc1c7a9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="c91ec364-3373-46e4-bdaf-65ba7c1c4352" testId="fd83e181-c551-a3c6-5eb3-b91cef938b9c" testName="Index" computerName="JAVI-PC" duration="00:00:00.0104843" startTime="2010-11-20T18:06:09.9921462+01:00" endTime="2010-11-20T18:06:10.3091643+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c91ec364-3373-46e4-bdaf-65ba7c1c4352">
+    </UnitTestResult>
+    <UnitTestResult executionId="7f46c4dc-58ea-4980-8265-299d7811e785" testId="ff01fa7f-3c72-140a-322a-c5220f494319" testName="Index_ReturnsTheProfilesList" computerName="JAVI-PC" duration="00:00:00.2292468" startTime="2010-11-20T18:06:10.3101643+01:00" endTime="2010-11-20T18:06:10.5431777+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f46c4dc-58ea-4980-8265-299d7811e785">
+    </UnitTestResult>
+    <UnitTestResult executionId="80959634-5dca-4c60-a34b-096c6946d470" testId="e2008a8f-0cdc-8108-03b0-612fd62516f7" testName="LogOn_Post_ReturnsViewIfValidateUserFails" computerName="JAVI-PC" duration="00:00:00.0022982" startTime="2010-11-20T18:06:10.5441777+01:00" endTime="2010-11-20T18:06:10.5501781+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80959634-5dca-4c60-a34b-096c6946d470">
+    </UnitTestResult>
+    <UnitTestResult executionId="0364b58b-7e6c-4eee-878e-03a7c53afa0c" testId="6ed7e016-2c48-b485-af35-b622d8f5528b" testName="Searcher_SearchIsNotNull" computerName="JAVI-PC" duration="00:00:00.0077081" startTime="2010-11-20T18:06:10.5511781+01:00" endTime="2010-11-20T18:06:10.5621788+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0364b58b-7e6c-4eee-878e-03a7c53afa0c">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Utilizar la dll TestTools del framework para obtener la propiedad privada</Message>
+          <StackTrace>   at TravellerMind.Tests.Controllers.SearcherControllerTest.Searcher_SearchIsNotNull() in C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\Controllers\SearcherControllerTest.cs:line 21
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="33b7e1bf-dead-4f66-9cc3-f1a7cbe4096d" testId="ce3260ff-12ca-214f-e193-dc6a56d826aa" testName="Register_Get_ReturnsView" computerName="JAVI-PC" duration="00:00:00.0003485" startTime="2010-11-20T18:06:10.5631788+01:00" endTime="2010-11-20T18:06:10.5671791+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33b7e1bf-dead-4f66-9cc3-f1a7cbe4096d">
+    </UnitTestResult>
+    <UnitTestResult executionId="ce99e67b-9385-4471-82ea-0ee365a8f141" testId="881b000d-b279-580f-6b1e-6829a9e8c2ed" testName="LogOn_Post_ReturnsViewIfModelStateIsInvalid" computerName="JAVI-PC" duration="00:00:00.0002668" startTime="2010-11-20T18:06:10.5681791+01:00" endTime="2010-11-20T18:06:10.5721793+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ce99e67b-9385-4471-82ea-0ee365a8f141">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e95e43e-1e34-42cb-9759-abe195fd1689" testId="0b91ed8f-758e-ce8f-a5a0-42fcdba43eec" testName="LogOn_Get_ReturnsView" computerName="JAVI-PC" duration="00:00:00.0001957" startTime="2010-11-20T18:06:10.5731794+01:00" endTime="2010-11-20T18:06:10.5771796+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e95e43e-1e34-42cb-9759-abe195fd1689">
+    </UnitTestResult>
+    <UnitTestResult executionId="93c639be-a675-4cff-a770-46117d48ba10" testId="ac8402e8-6d2b-23b8-3ae7-c25a311e0818" testName="ChangePassword_Post_ReturnsViewIfModelStateIsInvalid" computerName="JAVI-PC" duration="00:00:00.0007200" startTime="2010-11-20T18:06:10.5781797+01:00" endTime="2010-11-20T18:06:10.5831800+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93c639be-a675-4cff-a770-46117d48ba10">
+    </UnitTestResult>
+    <UnitTestResult executionId="ee6961b9-7a81-486f-b437-45c3fa60b68f" testId="e8c8b2b5-2007-e855-03da-6d2032ef5a80" testName="Register_Post_ReturnsViewIfRegistrationFails" computerName="JAVI-PC" duration="00:00:00.0011294" startTime="2010-11-20T18:06:10.5841800+01:00" endTime="2010-11-20T18:06:10.5881803+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ee6961b9-7a81-486f-b437-45c3fa60b68f">
+    </UnitTestResult>
+    <UnitTestResult executionId="0ed973ef-7b88-42aa-acc4-1101c66d6a81" testId="7e641361-7495-7971-eee7-7c2d78e0205d" testName="LogOn_Post_ReturnsRedirectOnSuccess_WithoutReturnUrl" computerName="JAVI-PC" duration="00:00:00.0005125" startTime="2010-11-20T18:06:10.5891803+01:00" endTime="2010-11-20T18:06:10.5931805+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0ed973ef-7b88-42aa-acc4-1101c66d6a81">
+    </UnitTestResult>
+    <UnitTestResult executionId="2c9381ed-6b45-4981-8521-18c3e17e0e1d" testId="ebc23c69-09fa-ba61-597a-bd979a25ade3" testName="LogOff_LogsOutAndRedirects" computerName="JAVI-PC" duration="00:00:00.0003299" startTime="2010-11-20T18:06:10.5931805+01:00" endTime="2010-11-20T18:06:10.5971808+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2c9381ed-6b45-4981-8521-18c3e17e0e1d">
+    </UnitTestResult>
+    <UnitTestResult executionId="7f1a0d4a-478b-4a52-a182-81976873352c" testId="81873771-9fe3-0f87-7c01-aaa59f1bc07f" testName="ChangePassword_Get_ReturnsView" computerName="JAVI-PC" duration="00:00:00.0002850" startTime="2010-11-20T18:06:10.5981808+01:00" endTime="2010-11-20T18:06:10.6021811+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7f1a0d4a-478b-4a52-a182-81976873352c">
+    </UnitTestResult>
+    <UnitTestResult executionId="0e719d92-e3f6-43a9-9288-bbd757800483" testId="ab41cad7-0569-024e-6bf1-9f3534215206" testName="About" computerName="JAVI-PC" duration="00:00:00.0001892" startTime="2010-11-20T18:06:10.6031811+01:00" endTime="2010-11-20T18:06:10.6061813+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0e719d92-e3f6-43a9-9288-bbd757800483">
+    </UnitTestResult>
+    <UnitTestResult executionId="f83c8c9a-44dc-426a-9726-aee65216a586" testId="61f28dd2-e2cf-aed1-7fb7-f16f602b39f8" testName="ProfilesController_ProfilesRepositoryIsNotNull" computerName="JAVI-PC" duration="00:00:00.0005340" startTime="2010-11-20T18:06:10.6071813+01:00" endTime="2010-11-20T18:06:10.6101815+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f83c8c9a-44dc-426a-9726-aee65216a586">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Utilizar la dll TestTools del framework para obtener la propiedad privada</Message>
+          <StackTrace>   at TravellerMind.Tests.Controllers.ProfileControllerTest.ProfilesController_ProfilesRepositoryIsNotNull() in C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\Controllers\ProfileControllerTest.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="4c0d64d0-e7ad-405b-8e69-74e5bae2bde3" testId="ef1be392-533f-3115-3caa-2a6579c66d5e" testName="LogOn_Post_ReturnsRedirectOnSuccess_WithReturnUrl" computerName="JAVI-PC" duration="00:00:00.0003036" startTime="2010-11-20T18:06:10.6111816+01:00" endTime="2010-11-20T18:06:10.6151818+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4c0d64d0-e7ad-405b-8e69-74e5bae2bde3">
+    </UnitTestResult>
+    <UnitTestResult executionId="f106f6e7-b320-42e4-b312-36d5793d38b1" testId="a828b198-62e4-69e2-0e7c-6af99e23db17" testName="ChangePassword_Post_ReturnsRedirectOnSuccess" computerName="JAVI-PC" duration="00:00:00.0004790" startTime="2010-11-20T18:06:10.6171819+01:00" endTime="2010-11-20T18:06:10.6211821+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f106f6e7-b320-42e4-b312-36d5793d38b1">
+    </UnitTestResult>
+    <UnitTestResult executionId="6cddc3c5-2f01-4bb6-a878-f0fe30dbec06" testId="a9a45bf3-ddbf-0c3e-39f9-41a5747c220b" testName="ChangePasswordSuccess_ReturnsView" computerName="JAVI-PC" duration="00:00:00.0001837" startTime="2010-11-20T18:06:10.6221822+01:00" endTime="2010-11-20T18:06:10.6251824+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6cddc3c5-2f01-4bb6-a878-f0fe30dbec06">
+    </UnitTestResult>
+    <UnitTestResult executionId="a53ba8c3-3f25-4d31-9df2-36ea359c87d9" testId="e2af2074-6186-43a3-7741-2b57f15a109a" testName="Register_Post_ReturnsViewIfModelStateIsInvalid" computerName="JAVI-PC" duration="00:00:00.0003426" startTime="2010-11-20T18:06:10.6261824+01:00" endTime="2010-11-20T18:06:10.6291826+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a53ba8c3-3f25-4d31-9df2-36ea359c87d9">
+    </UnitTestResult>
+    <UnitTestResult executionId="642ebe64-4e49-4872-ba32-b46536e881a6" testId="623facad-a7bf-788d-4a37-7412b352bd5e" testName="ChangePassword_Post_ReturnsViewIfChangePasswordFails" computerName="JAVI-PC" duration="00:00:00.0002891" startTime="2010-11-20T18:06:10.6301827+01:00" endTime="2010-11-20T18:06:10.6341829+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="642ebe64-4e49-4872-ba32-b46536e881a6">
+    </UnitTestResult>
+    <UnitTestResult executionId="4e62d3f8-5c0e-408e-a12b-6ce9638ff7c4" testId="d3581637-0c3d-f8cb-e456-d23f5bc1619c" testName="Register_Post_ReturnsRedirectOnSuccess" computerName="JAVI-PC" duration="00:00:00.0002362" startTime="2010-11-20T18:06:10.6351829+01:00" endTime="2010-11-20T18:06:10.6381831+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e62d3f8-5c0e-408e-a12b-6ce9638ff7c4">
+    </UnitTestResult>
+    <UnitTestResult executionId="302888c2-aa7c-4e19-9eed-2a2fbbc1c7a9" testId="85a1a4fe-1e62-016e-1bb6-5ccfab3a01e6" testName="Index_CallsToGetAllMethod" computerName="JAVI-PC" duration="00:00:00.0065429" startTime="2010-11-20T18:06:10.6391832+01:00" endTime="2010-11-20T18:06:10.6491837+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="302888c2-aa7c-4e19-9eed-2a2fbbc1c7a9">
+    </UnitTestResult>
+  </Results>
+</TestRun>

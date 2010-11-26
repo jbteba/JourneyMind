@@ -1,0 +1,7 @@
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Infrastructure.dll
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Infrastructure.pdb
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Domain.dll
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Domain.pdb
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\obj\Debug\TravellerMind.Infrastructure.dll
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\obj\Debug\TravellerMind.Infrastructure.pdb

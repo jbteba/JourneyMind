@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="599516d4-5d5b-4ad0-8139-51385d425a42" name="Javi@JAVI-PC 2010-11-20 18:11:11" runUser="Javi-PC\Javi" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="1ebe140e-4620-4837-8a6c-d59dd5c4eaf7">
+    <Deployment userDeploymentRoot="C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TestResults" useDefaultDeploymentRoot="false" runDeploymentRoot="Javi_JAVI-PC 2010-11-20 18_11_11">
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\bin\Debug\TravellerMind.Domain.dll" />
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Infrastructure\bin\TravellerMind.Infrastructure.dll" />
+      <DeploymentItem filename="c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\bin\TravellerMind.Web.dll" />
+      <DeploymentItem filename="C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\libraries\RhinoMocks\Rhino.Mocks.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2010-11-20T18:11:11.7139257+01:00" queuing="2010-11-20T18:11:11.8829353+01:00" start="2010-11-20T18:11:11.8909358+01:00" finish="2010-11-20T18:11:12.2589568+01:00" />
+  <ResultSummary outcome="Failed">
+    <Counters total="3" executed="3" error="0" failed="1" timeout="0" aborted="0" inconclusive="2" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" passed="0" completed="0" inProgress="0" pending="0" />
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="ProfilesController_ProfilesRepositoryIsNotNull" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="61f28dd2-e2cf-aed1-7fb7-f16f602b39f8">
+      <Execution id="5920612d-78b5-4247-bd43-2f8a5a61866e" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.ProfileControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="ProfilesController_ProfilesRepositoryIsNotNull" />
+    </UnitTest>
+    <UnitTest name="Searcher_TravelRepositoryIsNotNull" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="a897b593-bce4-fddc-d4ce-9c9e711eb1ba">
+      <Execution id="d9f5ed16-763e-48aa-8bac-f8e8f79948ee" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.SearcherControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Searcher_TravelRepositoryIsNotNull" />
+    </UnitTest>
+    <UnitTest name="PostSearch_CallsToGetTravelsMethodFromTravelsRepository" storage="c:\users\javi\documents\visual studio 2010\projects\travellermind\travellermind.tests\bin\debug\travellermind.tests.dll" id="beff30fa-cc6a-0ad4-2e2d-3d8d75560c81">
+      <Execution id="e9a4b466-614f-425e-b1fa-68e836bea4ba" />
+      <TestMethod codeBase="C:/Users/Javi/documents/visual studio 2010/Projects/TravellerMind/TravellerMind.Tests/bin/Debug/TravellerMind.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="TravellerMind.Tests.Controllers.SearcherControllerTest, TravellerMind.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="PostSearch_CallsToGetTravelsMethodFromTravelsRepository" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="beff30fa-cc6a-0ad4-2e2d-3d8d75560c81" executionId="e9a4b466-614f-425e-b1fa-68e836bea4ba" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="61f28dd2-e2cf-aed1-7fb7-f16f602b39f8" executionId="5920612d-78b5-4247-bd43-2f8a5a61866e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a897b593-bce4-fddc-d4ce-9c9e711eb1ba" executionId="d9f5ed16-763e-48aa-8bac-f8e8f79948ee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="e9a4b466-614f-425e-b1fa-68e836bea4ba" testId="beff30fa-cc6a-0ad4-2e2d-3d8d75560c81" testName="PostSearch_CallsToGetTravelsMethodFromTravelsRepository" computerName="JAVI-PC" duration="00:00:00.1624323" startTime="2010-11-20T18:11:11.8929359+01:00" endTime="2010-11-20T18:11:12.2349555+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e9a4b466-614f-425e-b1fa-68e836bea4ba">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method TravellerMind.Tests.Controllers.SearcherControllerTest.PostSearch_CallsToGetTravelsMethodFromTravelsRepository threw exception: 
+Rhino.Mocks.Exceptions.ExpectationViolationException: TravelsRepository.GetTravels(); Expected #1, Actual #0.</Message>
+          <StackTrace>    at Rhino.Mocks.RhinoMocksExtensions.AssertWasCalled[T](T mock, Action`1 action, Action`1 setupConstraints)
+   at Rhino.Mocks.RhinoMocksExtensions.AssertWasCalled[T](T mock, Func`2 action)
+   at TravellerMind.Tests.Controllers.SearcherControllerTest.PostSearch_CallsToGetTravelsMethodFromTravelsRepository() in C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\Controllers\SearcherControllerTest.cs:line 48
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5920612d-78b5-4247-bd43-2f8a5a61866e" testId="61f28dd2-e2cf-aed1-7fb7-f16f602b39f8" testName="ProfilesController_ProfilesRepositoryIsNotNull" computerName="JAVI-PC" duration="00:00:00.0042567" startTime="2010-11-20T18:11:12.2359555+01:00" endTime="2010-11-20T18:11:12.2439560+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5920612d-78b5-4247-bd43-2f8a5a61866e">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Utilizar la dll TestTools del framework para obtener la propiedad privada</Message>
+          <StackTrace>   at TravellerMind.Tests.Controllers.ProfileControllerTest.ProfilesController_ProfilesRepositoryIsNotNull() in C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\Controllers\ProfileControllerTest.cs:line 20
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="d9f5ed16-763e-48aa-8bac-f8e8f79948ee" testId="a897b593-bce4-fddc-d4ce-9c9e711eb1ba" testName="Searcher_TravelRepositoryIsNotNull" computerName="JAVI-PC" duration="00:00:00.0005621" startTime="2010-11-20T18:11:12.2449560+01:00" endTime="2010-11-20T18:11:12.2489563+01:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Inconclusive" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d9f5ed16-763e-48aa-8bac-f8e8f79948ee">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.Inconclusive failed. Utilizar la dll TestTools del framework para obtener la propiedad privada</Message>
+          <StackTrace>   at TravellerMind.Tests.Controllers.SearcherControllerTest.Searcher_TravelRepositoryIsNotNull() in C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\Controllers\SearcherControllerTest.cs:line 21
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+</TestRun>

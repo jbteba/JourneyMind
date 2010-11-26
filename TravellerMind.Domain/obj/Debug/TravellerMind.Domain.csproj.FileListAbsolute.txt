@@ -1,0 +1,5 @@
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\bin\Debug\TravellerMind.Domain.dll
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\bin\Debug\TravellerMind.Domain.pdb
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\obj\Debug\TravellerMind.Domain.dll
+C:\Users\Javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Domain\obj\Debug\TravellerMind.Domain.pdb
