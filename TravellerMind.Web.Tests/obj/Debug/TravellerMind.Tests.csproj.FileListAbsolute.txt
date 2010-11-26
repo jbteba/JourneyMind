@@ -1,8 +1,0 @@
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\bin\Debug\TravellerMind.Tests.dll.config
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\bin\Debug\TravellerMind.Tests.dll
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\bin\Debug\TravellerMind.Tests.pdb
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\bin\Debug\TravellerMind.dll
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\bin\Debug\TravellerMind.pdb
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\obj\Debug\ResolveAssemblyReference.cache
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\obj\Debug\TravellerMind.Tests.dll
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind.Tests\obj\Debug\TravellerMind.Tests.pdb

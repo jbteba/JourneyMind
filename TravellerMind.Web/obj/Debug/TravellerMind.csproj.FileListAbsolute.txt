@@ -1,5 +1,0 @@
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\bin\TravellerMind.dll
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\bin\TravellerMind.pdb
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\obj\Debug\ResolveAssemblyReference.cache
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\obj\Debug\TravellerMind.dll
-c:\users\javi\documents\visual studio 2010\Projects\TravellerMind\TravellerMind\obj\Debug\TravellerMind.pdb
