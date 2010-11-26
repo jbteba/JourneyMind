@@ -1,0 +1,7 @@
+<Modules>
+  <Module PersistentId="EB1372C6-F7B6-4110-A7BD-0C3E0C09A1D9" ModuleId="TravellerMind" />
+  <Module PersistentId="993BECB7-487A-4F2C-A2B3-73A3F5494A94" ModuleId="TravellerMind.Tests" />
+  <Module PersistentId="AC0EDB6D-D3B6-4113-BB2A-94D1ABDDBCD9" ModuleId="TravellerMind.Infrastructure" />
+  <Module PersistentId="5904DDAA-FFCC-4A15-A711-35399D1332B6" ModuleId="TravellerMind.Domain_2" />
+  <Module PersistentId="2807756A-658F-47A6-B1C9-334C935C661B" ModuleId="TravellerMind.Infrastructure.Tests" />
+</Modules>
