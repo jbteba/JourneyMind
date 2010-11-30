@@ -1,0 +1,17 @@
+JourneyMind.Domain/bin/
+JourneyMind.Domain/obj/
+JourneyMind.Infrastructure.Tests/bin/
+JourneyMind.Infrastructure.Tests/obj/
+JourneyMind.Infrastructure/bin/
+JourneyMind.Infrastructure/obj/
+JourneyMind.Web.Tests/bin/
+JourneyMind.Web.Tests/obj/
+JourneyMind.Web/bin/
+JourneyMind.Web/obj/
+TestResults/
+_ReSharper.*
+*.ReSharper.user
+*.suo
+*.csproj.user
+*.resharper
+*.cache
