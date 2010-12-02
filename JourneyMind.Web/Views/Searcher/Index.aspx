@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<JourneyMind.Domain.Search>" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Searcher
@@ -12,17 +12,9 @@
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
-            <legend>Fields</legend>
-            
-            <div class="editor-label">
-                <%: Html.LabelFor(model => model.Destination) %>
-            </div>
-            <div class="editor-field">
-                <%: Html.TextBoxFor(model => model.Destination) %>
-                <%: Html.ValidationMessageFor(model => model.Destination) %>
-            </div>
+            <legend>Search</legend>
             <p>
-                <input type="submit" value="Search"/>
+                <input type="submit" value="Search All"/>
             </p>
         </fieldset>
 
