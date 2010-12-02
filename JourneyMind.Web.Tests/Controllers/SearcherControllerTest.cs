@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Mvc;
+using AtentoFramework2008.TestTools.Helpers;
 using JourneyMind.Domain;
 using JourneyMind.Infrastructure.Repositories;
 using JourneyMind.Web.Controllers;
@@ -16,7 +17,8 @@ namespace JourneyMind.WebTests.Controllers
         {
             // Arrange
             var searcherController = new SearcherController();
-            Assert.Inconclusive("Utilizar la dll TestTools del framework para obtener la propiedad privada");
+
+            Assert.IsNotNull(searcherController.GetFieldValue<JourneysRepository>("_journeysRepository"));
         }
 
         [TestMethod]
