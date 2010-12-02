@@ -19,18 +19,15 @@ namespace JourneyMind.Web.Controllers
             _journeysRepository = new JourneysRepository();
         }
 
-        //
-        // GET: /Searcher/
-
         public ActionResult Index()
         {
             return View();
         }
 
         [HttpPost]
-        public ActionResult Search(Search search)
+        public ActionResult Search()
         {
-            List<Journey> retreivedJourneys =_journeysRepository.GetJourneys(search);
+            List<Journey> retreivedJourneys =_journeysRepository.GetAll();
             return View(retreivedJourneys);
         }
     }

@@ -15,7 +15,6 @@ namespace JourneyMind.WebTests.Controllers
         [TestMethod]
         public void Searcher_JourneyRepositoryIsNotNull()
         {
-            // Arrange
             var searcherController = new SearcherController();
 
             Assert.IsNotNull(searcherController.GetFieldValue<JourneysRepository>("_journeysRepository"));
@@ -24,46 +23,35 @@ namespace JourneyMind.WebTests.Controllers
         [TestMethod]
         public void Index_ReturnsAView()
         {
-            // Arrange
+            
             var searcherController = new SearcherController();
 
-            // Act
             var searcherViewResult = searcherController.Index() as ViewResult;
 
-            // Assert
             Assert.IsNotNull(searcherViewResult.ViewData);
         }
 
         [TestMethod]
         public void PostSearch_CallsToGetJourneysMethodFromJourneysRepository()
         {
-            // Arrange
             var mockJourneyRepository = MockRepository.GenerateMock<JourneysRepository>();
-            var stubSearch = MockRepository.GenerateStub<Search>();
-
-            // Act
+            
             var searcherController = new SearcherController(mockJourneyRepository);
-            searcherController.Search(stubSearch);
+            searcherController.Search();
 
-            // Assert
-            mockJourneyRepository.AssertWasCalled(m => m.GetJourneys(stubSearch));
+            mockJourneyRepository.AssertWasCalled(m => m.GetAll());
         }
 
         [TestMethod]
         public void PostSearch_ReturnsAJourneyList()
         {
-            // Arrange
             var stubJourneyRepository = MockRepository.GenerateStub<JourneysRepository>();
-            var stubSearch = MockRepository.GenerateStub<Search>();
             var journeys = new List<Journey>();
+            stubJourneyRepository.Stub(s => s.GetAll()).Return(journeys);
 
-            stubJourneyRepository.Stub(s => s.GetJourneys(stubSearch)).Return(journeys);
-
-            // Act
             var searcherController = new SearcherController(stubJourneyRepository);
-            var searcherViewResult = searcherController.Search(stubSearch) as ViewResult;
+            var searcherViewResult = searcherController.Search() as ViewResult;
 
-            // Assert
             Assert.AreEqual(journeys, searcherViewResult.ViewData.Model);
         }
     }

@@ -5,7 +5,7 @@ namespace JourneyMind.Infrastructure.Repositories
 {
     public class JourneysRepository
     {
-        public virtual List<Journey> GetJourneys(Search search)
+        public virtual List<Journey> GetAll()
         {
             return new List<Journey>();
         }

@@ -9,10 +9,10 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
     public class JourneysRepositoryTest
     {
         [TestMethod]
-        public void GetJourneys_ReturnsANotNullList()
+        public void GetAll_ReturnsANotNullList()
         {
             var journeysRepository = new JourneysRepository();
-            List<Journey> journeys = journeysRepository.GetJourneys(null);
+            List<Journey> journeys = journeysRepository.GetAll();
 
             Assert.IsNotNull(journeys);
         }
