@@ -2,5 +2,6 @@
 {
     public class Journey
     {
+        public string Country { get; set; }
     }
 }

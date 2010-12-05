@@ -1,4 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<JourneyMind.Domain.Journey>>" %>
+<%@ Import Namespace="JourneyMind.Domain" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Search
@@ -16,6 +17,11 @@
     <% foreach (var item in Model) { %>
     
         <tr>
+            <td>
+                <div class="editor-label">
+                    <%: Html.Label(item.Country) %>
+                </div>
+            </td>
             <td>
                 <%: Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) %> |
                 <%: Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ })%> |
