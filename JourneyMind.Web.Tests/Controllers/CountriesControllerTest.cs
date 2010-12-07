@@ -10,25 +10,25 @@ using Rhino.Mocks;
 namespace JourneyMind.WebTests.Controllers
 {
     [TestClass]
-    public class SearcherControllerTest
+    public class CountriesControllerTest
     {
         [TestMethod]
-        public void Searcher_CountriesRepositoryIsNotNull()
+        public void Countries_CountriesRepositoryIsNotNull()
         {
-            var searcherController = new SearcherController();
+            var countriesController = new CountriesController();
 
-            Assert.IsNotNull(searcherController.GetFieldValue<CountriesRepository>("_countriesRepository"));
+            Assert.IsNotNull(countriesController.GetFieldValue<CountriesRepository>("_countriesRepository"));
         }
 
         [TestMethod]
         public void Index_ReturnsAView()
         {
-            
-            var searcherController = new SearcherController();
 
-            var searcherViewResult = searcherController.Index() as ViewResult;
+            var countriesController = new CountriesController();
 
-            Assert.IsNotNull(searcherViewResult.ViewData);
+            var countriesViewResult = countriesController.Index() as ViewResult;
+
+            Assert.IsNotNull(countriesViewResult.ViewData);
         }
 
         [TestMethod]
@@ -36,8 +36,8 @@ namespace JourneyMind.WebTests.Controllers
         {
             var mockCountriesRepository = MockRepository.GenerateMock<CountriesRepository>();
 
-            var searcherController = new SearcherController(mockCountriesRepository);
-            searcherController.Search();
+            var countriesController = new CountriesController(mockCountriesRepository);
+            countriesController.Search();
 
             mockCountriesRepository.AssertWasCalled(m => m.GetAll());
         }
@@ -49,10 +49,10 @@ namespace JourneyMind.WebTests.Controllers
             var countries = new List<Country>();
             stubCountriesRepository.Stub(s => s.GetAll()).Return(countries);
 
-            var searcherController = new SearcherController(stubCountriesRepository);
-            var searcherViewResult = searcherController.Search() as ViewResult;
+            var countriesController = new CountriesController(stubCountriesRepository);
+            var countriesViewResult = countriesController.Search() as ViewResult;
 
-            Assert.AreEqual(countries, searcherViewResult.ViewData.Model);
+            Assert.AreEqual(countries, countriesViewResult.ViewData.Model);
         }
     }
 }

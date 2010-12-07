@@ -1,5 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<JourneyMind.Domain.Journey>>" %>
-<%@ Import Namespace="JourneyMind.Domain" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Shared/Site.Master" Inherits="System.Web.Mvc.ViewPage<IEnumerable<JourneyMind.Domain.Country>>" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="TitleContent" runat="server">
 	Search
@@ -26,7 +25,7 @@
             </td>
             <td>
                 <div>
-                    <%: Html.Label(item.Country) %>
+                    <%: Html.Label(item.Name) %>
                 </div>
             </td>
             <td>

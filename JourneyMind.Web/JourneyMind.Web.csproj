@@ -67,7 +67,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\SearcherController.cs" />
+    <Compile Include="Controllers\CountriesController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -76,8 +76,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
-    <Content Include="Views\Searcher\Index.aspx" />
-    <Content Include="Views\Searcher\Search.aspx" />
+    <Content Include="Views\Countries\Index.aspx" />
+    <Content Include="Views\Countries\Search.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

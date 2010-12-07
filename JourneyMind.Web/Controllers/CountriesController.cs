@@ -5,16 +5,16 @@ using JourneyMind.Infrastructure.Repositories;
 
 namespace JourneyMind.Web.Controllers
 {
-    public class SearcherController : Controller
+    public class CountriesController : Controller
     {
         private readonly CountriesRepository _countriesRepository;
 
-        public SearcherController(CountriesRepository countriesRepository)
+        public CountriesController(CountriesRepository countriesRepository)
         {
             _countriesRepository = countriesRepository;
         }
 
-        public SearcherController()
+        public CountriesController()
         {
             _countriesRepository = new CountriesRepository();
         }
