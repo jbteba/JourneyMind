@@ -63,7 +63,7 @@
   <ItemGroup>
     <Compile Include="Proxies\CountryInfoService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\JourneysRepository.cs" />
+    <Compile Include="Repositories\CountriesRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

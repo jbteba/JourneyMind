@@ -11,23 +11,23 @@ using www.oorsprong.org.websamples.countryinfo;
 namespace JourneyMind.Infrastructure.Tests.Repositories
 {
     [TestClass]
-    public class JourneysRepositoryTest
+    public class CountriesRepositoryTest
     {
         [TestMethod]
-        public void JourneyRepository_CountryInfoServiceSoapTypeClientIsNotNull()
+        public void _CountryInfoServiceSoapTypeClientIsNotNull()
         {
-            var journeyRepository = new JourneysRepository();
+            var countriesRepository = new CountriesRepository();
 
             Assert.IsNotNull(
-                journeyRepository.GetFieldValue<CountryInfoServiceSoapTypeClient>("_countryInfoServiceSoapTypeClient"));
+                countriesRepository.GetFieldValue<CountryInfoServiceSoapTypeClient>("_countryInfoServiceSoapTypeClient"));
         }
 
         [TestMethod]
         public void GetAll_ReturnsANotEmptyList()
         {
-            var journeysRepository = new JourneysRepository();
+            var countriesRepository = new CountriesRepository();
 
-            List<Country> countries = journeysRepository.GetAll();
+            List<Country> countries = countriesRepository.GetAll();
 
             Assert.AreNotEqual(0, countries.Count);
         }
@@ -53,9 +53,9 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
                                                                                                                        "CountryName2"
                                                                                                                }
                                                                                                        });
-            
-            var journeysRepository = new JourneysRepository(stubCountryInfoServiceSoapTypeClient);
-            List<Country> countries = journeysRepository.GetAll();
+
+            var countriesRepository = new CountriesRepository(stubCountryInfoServiceSoapTypeClient);
+            List<Country> countries = countriesRepository.GetAll();
 
             Assert.AreEqual("CountryName", countries[0].Name);
             Assert.AreEqual("CountryName2", countries[1].Name);
@@ -83,8 +83,8 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
                                                                                                                }
                                                                                                        });
 
-            var journeysRepository = new JourneysRepository(stubCountryInfoServiceSoapTypeClient);
-            List<Country> countries = journeysRepository.GetAll();
+            var countriesRepository = new CountriesRepository(stubCountryInfoServiceSoapTypeClient);
+            List<Country> countries = countriesRepository.GetAll();
 
             Assert.AreEqual("flag1", countries[0].Flag);
             Assert.AreEqual("flag2", countries[1].Flag);
@@ -99,8 +99,8 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
                 MockRepository.GenerateStub<CountryInfoServiceSoapTypeClient>(stubBinding, stubEndpointAddress);
             mockCountryInfoServiceSoapTypeClient.Stub(s => s.FullCountryInfoAllCountries()).Return(new tCountryInfo[0]);
 
-            var journeysRepository = new JourneysRepository(mockCountryInfoServiceSoapTypeClient);
-            journeysRepository.GetAll();
+            var countriesRepository = new CountriesRepository(mockCountryInfoServiceSoapTypeClient);
+            countriesRepository.GetAll();
             
             mockCountryInfoServiceSoapTypeClient.AssertWasCalled(m=>m.FullCountryInfoAllCountries());
         }
@@ -114,11 +114,11 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
                 MockRepository.GenerateMock<CountryInfoServiceSoapTypeClient>(stubBinding, stubEndpointAddress);
             stubCountryInfoServiceSoapTypeClient.Stub(s => s.FullCountryInfoAllCountries()).Throw(new Exception());
 
-            var journeysRepository = new JourneysRepository(stubCountryInfoServiceSoapTypeClient);
+            var countriesRepository = new CountriesRepository(stubCountryInfoServiceSoapTypeClient);
             
             try
             {
-                journeysRepository.GetAll();
+                countriesRepository.GetAll();
                 Assert.Fail("An exception should has been thrown");
             }
             catch (Exception exception)

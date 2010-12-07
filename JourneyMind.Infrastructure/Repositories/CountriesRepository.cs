@@ -6,11 +6,11 @@ using JourneyMind.Domain;
 
 namespace JourneyMind.Infrastructure.Repositories
 {
-    public class JourneysRepository
+    public class CountriesRepository
     {
         private readonly CountryInfoServiceSoapTypeClient _countryInfoServiceSoapTypeClient;
 
-        public JourneysRepository()
+        public CountriesRepository()
         {
             _countryInfoServiceSoapTypeClient =
                 new CountryInfoServiceSoapTypeClient(new BasicHttpBinding {MaxReceivedMessageSize = 9000000},
@@ -18,7 +18,7 @@ namespace JourneyMind.Infrastructure.Repositories
                                                          "http://www.oorsprong.org/websamples.countryinfo/CountryInfoService.wso"));
         }
 
-        public JourneysRepository(CountryInfoServiceSoapTypeClient countryInfoServiceSoapTypeClient)
+        public CountriesRepository(CountryInfoServiceSoapTypeClient countryInfoServiceSoapTypeClient)
         {
             _countryInfoServiceSoapTypeClient = countryInfoServiceSoapTypeClient;
         }

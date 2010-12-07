@@ -7,16 +7,16 @@ namespace JourneyMind.Web.Controllers
 {
     public class SearcherController : Controller
     {
-        private readonly JourneysRepository _journeysRepository;
+        private readonly CountriesRepository _countriesRepository;
 
-        public SearcherController(JourneysRepository journeysRepository)
+        public SearcherController(CountriesRepository countriesRepository)
         {
-            _journeysRepository = journeysRepository;
+            _countriesRepository = countriesRepository;
         }
 
         public SearcherController()
         {
-            _journeysRepository = new JourneysRepository();
+            _countriesRepository = new CountriesRepository();
         }
 
         public ActionResult Index()
@@ -27,7 +27,7 @@ namespace JourneyMind.Web.Controllers
         [HttpPost]
         public ActionResult Search()
         {
-            List<Country> retreivedCountries =_journeysRepository.GetAll();
+            List<Country> retreivedCountries = _countriesRepository.GetAll();
             return View(retreivedCountries);
         }
     }

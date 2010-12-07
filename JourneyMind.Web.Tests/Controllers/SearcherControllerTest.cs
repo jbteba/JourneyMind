@@ -13,11 +13,11 @@ namespace JourneyMind.WebTests.Controllers
     public class SearcherControllerTest
     {
         [TestMethod]
-        public void Searcher_JourneyRepositoryIsNotNull()
+        public void Searcher_CountriesRepositoryIsNotNull()
         {
             var searcherController = new SearcherController();
 
-            Assert.IsNotNull(searcherController.GetFieldValue<JourneysRepository>("_journeysRepository"));
+            Assert.IsNotNull(searcherController.GetFieldValue<CountriesRepository>("_countriesRepository"));
         }
 
         [TestMethod]
@@ -32,24 +32,24 @@ namespace JourneyMind.WebTests.Controllers
         }
 
         [TestMethod]
-        public void PostSearch_CallsToGetJourneysMethodFromJourneysRepository()
+        public void PostSearch_CallsToGetAllMethodFromCountriesRepository()
         {
-            var mockJourneyRepository = MockRepository.GenerateMock<JourneysRepository>();
-            
-            var searcherController = new SearcherController(mockJourneyRepository);
+            var mockCountriesRepository = MockRepository.GenerateMock<CountriesRepository>();
+
+            var searcherController = new SearcherController(mockCountriesRepository);
             searcherController.Search();
 
-            mockJourneyRepository.AssertWasCalled(m => m.GetAll());
+            mockCountriesRepository.AssertWasCalled(m => m.GetAll());
         }
 
         [TestMethod]
-        public void PostSearch_ReturnsAJourneyList()
+        public void PostSearch_ReturnsACountryList()
         {
-            var stubJourneyRepository = MockRepository.GenerateStub<JourneysRepository>();
+            var stubCountriesRepository = MockRepository.GenerateStub<CountriesRepository>();
             var countries = new List<Country>();
-            stubJourneyRepository.Stub(s => s.GetAll()).Return(countries);
+            stubCountriesRepository.Stub(s => s.GetAll()).Return(countries);
 
-            var searcherController = new SearcherController(stubJourneyRepository);
+            var searcherController = new SearcherController(stubCountriesRepository);
             var searcherViewResult = searcherController.Search() as ViewResult;
 
             Assert.AreEqual(countries, searcherViewResult.ViewData.Model);
