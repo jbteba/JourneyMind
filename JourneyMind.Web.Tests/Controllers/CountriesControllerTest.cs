@@ -19,38 +19,27 @@ namespace JourneyMind.WebTests.Controllers
 
             Assert.IsNotNull(countriesController.GetFieldValue<CountriesRepository>("_countriesRepository"));
         }
-
+        
         [TestMethod]
-        public void Index_ReturnsAView()
-        {
-
-            var countriesController = new CountriesController();
-
-            var countriesViewResult = countriesController.Index() as ViewResult;
-
-            Assert.IsNotNull(countriesViewResult.ViewData);
-        }
-
-        [TestMethod]
-        public void PostSearch_CallsToGetAllMethodFromCountriesRepository()
+        public void Index_CallsToGetAllMethodFromCountriesRepository()
         {
             var mockCountriesRepository = MockRepository.GenerateMock<CountriesRepository>();
 
             var countriesController = new CountriesController(mockCountriesRepository);
-            countriesController.Search();
+            countriesController.Index();
 
             mockCountriesRepository.AssertWasCalled(m => m.GetAll());
         }
 
         [TestMethod]
-        public void PostSearch_ReturnsACountryList()
+        public void Index_ReturnsACountryList()
         {
             var stubCountriesRepository = MockRepository.GenerateStub<CountriesRepository>();
             var countries = new List<Country>();
             stubCountriesRepository.Stub(s => s.GetAll()).Return(countries);
 
             var countriesController = new CountriesController(stubCountriesRepository);
-            var countriesViewResult = countriesController.Search() as ViewResult;
+            var countriesViewResult = countriesController.Index() as ViewResult;
 
             Assert.AreEqual(countries, countriesViewResult.ViewData.Model);
         }

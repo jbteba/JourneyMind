@@ -21,12 +21,6 @@ namespace JourneyMind.Web.Controllers
 
         public ActionResult Index()
         {
-            return View();
-        }
-
-        [HttpPost]
-        public ActionResult Search()
-        {
             List<Country> retreivedCountries = _countriesRepository.GetAll();
             return View(retreivedCountries);
         }
