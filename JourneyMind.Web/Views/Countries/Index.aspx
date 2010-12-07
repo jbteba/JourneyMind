@@ -8,7 +8,7 @@
 
     <h2>Searcher</h2>
 
-    <% using (Html.BeginForm("Search","Searcher",FormMethod.Post)) {%>
+    <% using (Html.BeginForm("Search","Countries",FormMethod.Post)) {%>
         <%: Html.ValidationSummary(true) %>
 
         <fieldset>
