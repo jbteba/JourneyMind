@@ -27,8 +27,8 @@ namespace JourneyMind.Web.Controllers
         [HttpPost]
         public ActionResult Search()
         {
-            List<Journey> retreivedJourneys =_journeysRepository.GetAll();
-            return View(retreivedJourneys);
+            List<Country> retreivedCountries =_journeysRepository.GetAll();
+            return View(retreivedCountries);
         }
     }
 }

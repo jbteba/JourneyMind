@@ -1,8 +1,8 @@
 ﻿namespace JourneyMind.Domain
 {
-    public class Journey
+    public class Country
     {
         public string Flag { get; set; }
-        public string Country { get; set; }
+        public string Name { get; set; }
     }
 }

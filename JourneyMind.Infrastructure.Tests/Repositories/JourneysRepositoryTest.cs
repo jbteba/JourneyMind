@@ -27,9 +27,9 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
         {
             var journeysRepository = new JourneysRepository();
 
-            List<Journey> journeys = journeysRepository.GetAll();
+            List<Country> countries = journeysRepository.GetAll();
 
-            Assert.AreNotEqual(0, journeys.Count);
+            Assert.AreNotEqual(0, countries.Count);
         }
 
         [TestMethod]
@@ -55,10 +55,10 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
                                                                                                        });
             
             var journeysRepository = new JourneysRepository(stubCountryInfoServiceSoapTypeClient);
-            List<Journey> journeys = journeysRepository.GetAll();
+            List<Country> countries = journeysRepository.GetAll();
 
-            Assert.AreEqual("CountryName", journeys[0].Country);
-            Assert.AreEqual("CountryName2", journeys[1].Country);
+            Assert.AreEqual("CountryName", countries[0].Name);
+            Assert.AreEqual("CountryName2", countries[1].Name);
         }
 
         [TestMethod]
@@ -84,10 +84,10 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
                                                                                                        });
 
             var journeysRepository = new JourneysRepository(stubCountryInfoServiceSoapTypeClient);
-            List<Journey> journeys = journeysRepository.GetAll();
+            List<Country> countries = journeysRepository.GetAll();
 
-            Assert.AreEqual("flag1", journeys[0].Flag);
-            Assert.AreEqual("flag2", journeys[1].Flag);
+            Assert.AreEqual("flag1", countries[0].Flag);
+            Assert.AreEqual("flag2", countries[1].Flag);
         }
 
         [TestMethod]

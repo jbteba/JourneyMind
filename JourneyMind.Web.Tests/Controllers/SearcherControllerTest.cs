@@ -46,13 +46,13 @@ namespace JourneyMind.WebTests.Controllers
         public void PostSearch_ReturnsAJourneyList()
         {
             var stubJourneyRepository = MockRepository.GenerateStub<JourneysRepository>();
-            var journeys = new List<Journey>();
-            stubJourneyRepository.Stub(s => s.GetAll()).Return(journeys);
+            var countries = new List<Country>();
+            stubJourneyRepository.Stub(s => s.GetAll()).Return(countries);
 
             var searcherController = new SearcherController(stubJourneyRepository);
             var searcherViewResult = searcherController.Search() as ViewResult;
 
-            Assert.AreEqual(journeys, searcherViewResult.ViewData.Model);
+            Assert.AreEqual(countries, searcherViewResult.ViewData.Model);
         }
     }
 }
