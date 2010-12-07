@@ -58,7 +58,36 @@ namespace JourneyMind.Infrastructure.Tests.Repositories
             List<Journey> journeys = journeysRepository.GetAll();
 
             Assert.AreEqual("CountryName", journeys[0].Country);
-            Assert.IsNotNull("CountryName2", journeys[1].Country);
+            Assert.AreEqual("CountryName2", journeys[1].Country);
+        }
+
+        [TestMethod]
+        public void GetAll_ReturnsAListWithFlagSrcInEachItem()
+        {
+            var stubCountryInfoServiceSoapTypeClient =
+                MockRepository.GenerateMock<CountryInfoServiceSoapTypeClient>(new BasicHttpBinding(),
+                                                                              new EndpointAddress("http://stubEndPoint"));
+            stubCountryInfoServiceSoapTypeClient.Stub(s => s.FullCountryInfoAllCountries()).Return(new[]
+                                                                                                       {
+                                                                                                           new tCountryInfo
+                                                                                                               {
+                                                                                                                   sCountryFlag
+                                                                                                                       =
+                                                                                                                       "flag1"
+                                                                                                               },
+                                                                                                           new tCountryInfo
+                                                                                                               {
+                                                                                                                   sCountryFlag
+                                                                                                                       =
+                                                                                                                       "flag2"
+                                                                                                               }
+                                                                                                       });
+
+            var journeysRepository = new JourneysRepository(stubCountryInfoServiceSoapTypeClient);
+            List<Journey> journeys = journeysRepository.GetAll();
+
+            Assert.AreEqual("flag1", journeys[0].Flag);
+            Assert.AreEqual("flag2", journeys[1].Flag);
         }
 
         [TestMethod]

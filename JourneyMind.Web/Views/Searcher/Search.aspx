@@ -11,14 +11,21 @@
 
     <table>
         <tr>
-            <th></th>
+            <th>Flag</th>
+            <th>Country</th>
+            <th>Options</th>
         </tr>
 
     <% foreach (var item in Model) { %>
     
         <tr>
             <td>
-                <div class="editor-label">
+                <div>
+                    <img src="<%:item.Flag %>" class="previewFlag" alt=""/>
+                </div>
+            </td>
+            <td>
+                <div>
                     <%: Html.Label(item.Country) %>
                 </div>
             </td>

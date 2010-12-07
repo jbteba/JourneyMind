@@ -289,6 +289,12 @@ div#title
     text-decoration: none;
 }
 
+img.previewFlag 
+{ 
+    width: 26px;
+    height: 18px;
+}
+
 /* Styles for validation helpers
 -----------------------------------------------------------*/
 .field-validation-error

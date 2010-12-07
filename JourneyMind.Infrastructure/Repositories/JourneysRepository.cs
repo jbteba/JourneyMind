@@ -28,7 +28,7 @@ namespace JourneyMind.Infrastructure.Repositories
             try
             {
                 journeys = _countryInfoServiceSoapTypeClient.FullCountryInfoAllCountries().Select(
-                                country => new Journey { Country = country.sName }).ToList();
+                                country => new Journey { Country = country.sName, Flag = country.sCountryFlag}).ToList();
             }
             catch (Exception)
             {
