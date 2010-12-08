@@ -43,5 +43,31 @@ namespace JourneyMind.WebTests.Controllers
 
             Assert.AreEqual(countries, countriesViewResult.ViewData.Model);
         }
+
+        [TestMethod]
+        public void Details_CallsToGetByCodeMethodFromCountriesRepository()
+        {
+            const string isoCode = "countryCode";
+            var mockCountriesRepository = MockRepository.GenerateMock<CountriesRepository>();
+
+            var countriesController = new CountriesController(mockCountriesRepository);
+            countriesController.Details(isoCode);
+
+            mockCountriesRepository.AssertWasCalled(m => m.GetByCode(isoCode));
+        }
+
+        [TestMethod]
+        public void Details_ReturnsACountry()
+        {
+            const string stubIsoCode = "countryCode";
+            var stubCountry = new Country();
+            var stubCountriesRepository = MockRepository.GenerateStub<CountriesRepository>();
+            stubCountriesRepository.Stub(s => s.GetByCode(stubIsoCode)).Return(stubCountry);
+
+            var countriesController = new CountriesController(stubCountriesRepository);
+            var countryViewResult = countriesController.Details(stubIsoCode) as ViewResult;
+
+            Assert.AreEqual(stubCountry, countryViewResult.ViewData.Model);
+        }
     }
 }

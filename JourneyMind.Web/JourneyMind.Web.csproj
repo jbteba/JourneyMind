@@ -77,6 +77,7 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Views\Countries\Index.aspx" />
+    <Content Include="Views\Countries\Details.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

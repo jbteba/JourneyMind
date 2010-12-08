@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.ServiceModel;
 using JourneyMind.Domain;
+using www.oorsprong.org.websamples.countryinfo;
 
 namespace JourneyMind.Infrastructure.Repositories
 {
@@ -29,7 +30,8 @@ namespace JourneyMind.Infrastructure.Repositories
             try
             {
                 countries = _countryInfoServiceSoapTypeClient.FullCountryInfoAllCountries().Select(
-                                country => new Country { Name = country.sName, Flag = country.sCountryFlag}).ToList();
+                    country => new Country {Code = country.sISOCode, Name = country.sName, Flag = country.sCountryFlag})
+                    .ToList();
             }
             catch (Exception)
             {
@@ -37,6 +39,32 @@ namespace JourneyMind.Infrastructure.Repositories
                                                   _countryInfoServiceSoapTypeClient.Endpoint.ListenUri));
             }
             return countries;
+        }
+
+        public virtual Country GetByCode(string code)
+        {
+            tCountryInfo country;
+            try
+            {
+                country = _countryInfoServiceSoapTypeClient.FullCountryInfo(code);
+            }
+            catch (Exception)
+            {
+                throw new Exception(string.Format("The web service located in {0} is not available.",
+                                                  _countryInfoServiceSoapTypeClient.Endpoint.ListenUri));
+            }
+
+            if (country!=null)
+            {
+                return new Country
+                           {
+                               Code = country.sISOCode,
+                               Name = country.sName,
+                               CapitalCity = country.sCapitalCity,
+                               Flag = country.sCountryFlag
+                           };
+            }
+            return null;
         }
     }
 }

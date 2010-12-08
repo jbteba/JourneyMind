@@ -2262,7 +2262,7 @@ public partial class CountryInfoServiceSoapTypeClient : System.ServiceModel.Clie
         return base.Channel.FullCountryInfo(request);
     }
     
-    public www.oorsprong.org.websamples.countryinfo.tCountryInfo FullCountryInfo(string sCountryISOCode)
+    public virtual www.oorsprong.org.websamples.countryinfo.tCountryInfo FullCountryInfo(string sCountryISOCode)
     {
         FullCountryInfoRequest inValue = new FullCountryInfoRequest();
         inValue.Body = new FullCountryInfoRequestBody();
